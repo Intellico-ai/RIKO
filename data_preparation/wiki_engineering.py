@@ -99,8 +99,6 @@ with open("WikiMed.json", "r") as f:
         if count==100000: break
 
 
-# In[62]:
-
 
 with open("proto_wiki_data.json", "w") as f:
     json.dump(all_data, f)

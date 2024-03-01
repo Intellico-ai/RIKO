@@ -37,24 +37,7 @@ docs_dir = "/path/to/wiki_data"
 # )
 
 
-all_data= []
-count=0
-with open("WikiMed.json", "r") as f:
-    for line in f:
-        # Try to parse each line as a JSON object
-        #try:
-        data = json.loads(line)
-        data[ "topic"]= topic_info[topic_info["Topic"]==topics[count]]["Name"].iloc[-1]
-        all_data.append(data)
 
-        safe_title = data["title"].replace("/", "_").replace(":", "_")
-
-        with open(f"wiki_data/{safe_title}.txt", "w") as f:
-            f.write(data["text"])
-        count+=1
-        if count==100000: break
-
-# In[4]:
 
 
 document_store = Neo4jDocumentStore(

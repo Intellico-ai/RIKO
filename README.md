@@ -18,12 +18,15 @@ docker compose up -d
 
 Fetch data at https://zenodo.org/records/5755155, WikiMed dataset
 
+run wiki_engineering
+
 run haystack_indexing
 
 run haystack_addtag
 
 
 ## Run application
+
 python -m app.app
 
 Ask your questions!
