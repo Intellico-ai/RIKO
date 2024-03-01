@@ -36,3 +36,5 @@ Ask your questions!
 ![sample question 1](./images/prototype_1.png)
 
 ![sample question 2](./images/prototype_2.png)
+
+![documents connected to a topic](./images/prototype_3.png)
