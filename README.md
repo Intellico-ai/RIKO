@@ -6,8 +6,9 @@ pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 
 
-
 set OPENAI_API_KEY=sk-<your openai key>
+
+
 
 ## start DB
 you will need to place apoc-5.16.1-core.jar in the plugins folder (wget https://github.com/neo4j/apoc/releases/download/5.16.1/apoc-5.16.1-core.jar)
@@ -17,12 +18,13 @@ docker compose up -d
 ## data preparation
 
 Fetch data at https://zenodo.org/records/5755155, WikiMed dataset
+cd data_preparation
 
-run wiki_engineering
+python wiki_engineering.py
 
-run haystack_indexing
+python haystack_indexing.py
 
-run haystack_addtag
+python haystack_addtag.py
 
 
 ## Run application

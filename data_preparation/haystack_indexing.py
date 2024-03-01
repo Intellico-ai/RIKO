@@ -30,7 +30,7 @@ logger = logging.getLogger(__name__)
 
 
 # Let's first get some files that we want to use
-docs_dir = "/path/to/wiki_data"
+docs_dir = "/path/to/wiki_files"
 # fetch_archive_from_http(
 #     url="https://s3.eu-central-1.amazonaws.com/deepset.ai-farm-qa/datasets/documents/wiki_gameofthrones_txt6.zip",
 #     output_dir=docs_dir,

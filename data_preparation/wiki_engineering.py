@@ -6,12 +6,12 @@
 
 import json
 
-
+import os
 
 # This will hold all the JSON objects
 all_data = []
 count=0
-with open("WikiMed.json", "r") as f:
+with open("./WikiMed.json", "r") as f:
     for line in f:
         # Try to parse each line as a JSON object
         try:
@@ -75,11 +75,15 @@ topic_info = topic_model.get_topic_info()
 
 
 
-topic_info.to_csv("wiki_topics.csv", index=False)
+#topic_info.to_csv("wiki_topics.csv", index=False)
 
+folder_path="./wiki_data"
 
-# In[65]:
-
+if not os.path.exists(folder_path):
+    os.makedirs(folder_path)
+    print(f"Folder '{folder_path}' created successfully.")
+else:
+    print(f"Folder '{folder_path}' already exists.")
 
 all_data= []
 count=0

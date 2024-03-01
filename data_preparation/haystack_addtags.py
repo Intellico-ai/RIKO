@@ -19,7 +19,7 @@ import pandas as pd
 import json
 
 
-directory = 'path/to/wiki_data'  # Update this to your directory path
+directory = 'path/to/wiki_files'  # Update this to your directory path
 
 
 # In[5]:
