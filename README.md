@@ -3,6 +3,9 @@
 ## environment
 virtualenv venv && source venv/bin/activate
 pip install -r requirements.txt
+python -m spacy download en_core_web_sm
+
+
 
 set OPENAI_API_KEY=sk-<your openai key>
 
